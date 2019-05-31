@@ -1,10 +1,10 @@
 # react-rif (aka rif or R)
-React-rif (or R) is a simple React component that tries to kind of mimic AngularJS _ng-if_ functionality
-. There are few similar components but aim here was to create as short component as possible. 
+React-rif is a simple React component that tries to kind of mimic AngularJS _ng-if_ functionality
+. Main function to offer is conditional rendering. There are few similar components available but aim here was to
+ create as short component as possible. 
 
-Typical use case would responsive web design with React since correct way to show/hide elements is to
-use _conditional rendering_. This prevents components that are not supposed to be rendered to not be added to
-the DOM tree at all. React-Rif does exactly this.
+_Conditional Rendering_ prevents components to be either added to the DOM or not. Those that aren't supposed to be 
+rendered are therefore not in DOM and application should run faster as there are less elements to be diffed by React.
 
 ## Install
 
@@ -14,9 +14,8 @@ npm install react-rif
 
 ## Usage
 
-Usage is pretty straight forward. Just import the hook and call the hook function in your component.
-In the example below _mobile_ div is shown if hook says window size is below mobile limit. Otherwise we render
-_tablet_ div.
+Usage is really easy. Just import the component and wrap your elements with R. You should provide a boolean value
+ to tell R whether to render children or not.
 
 ```ts
 import {R} from 'react-rif';
