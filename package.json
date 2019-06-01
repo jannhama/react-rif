@@ -1,6 +1,6 @@
 {
   "name": "react-rif",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple component for conditional rendering on react",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -19,7 +19,6 @@
     "react",
     "conditional",
     "react-component",
-    "rendering",
     "rendering",
     "render",
     "typescript",
